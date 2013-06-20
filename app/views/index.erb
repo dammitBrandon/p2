@@ -4,18 +4,22 @@
 
 
   <div id='login'>
+  <div class='form_tag'>Log in</div>
   <form action='/login' method='post'>
     <label>Email</label><input="text" name='email'>
     <label>Password<label><input="text" name='password'>
+    <input type='submit'/>
   </form>
   </div>
   
   <div id='sign_up'>
+  <div class='form_tag'>Sign up</div>
   <form action='/login' method='post'>
     <label>First name</label><input type="text" name='firstname'>
     <label>Last name</label><input type="text" name='lastname'>
     <label>Email</label><input type="text" name='email'>
     <label>Birthdate</label><input type="text" name='birthdate'> 
+    <input type='submit'/>
   </form>
   </div>
   
@@ -28,11 +32,25 @@
 
 <div id='create_event'>
   <form action='/create_event' method='post'>
+    <div class='form_tag'>Create an event</div>
     <label>Event name</label><input type="text" name='name'>
     <label>Email</label><input type="text" name='email'>
     <label>Location</label><input type="text" name='location'>
     <label>Start time</label><input type="text" name='start_time'> 
-    <label>End time</label><input type="text" name='end_time'> 
+    <label>End time</label><input type="text" name='end_time'>
+    <input type='submit'/>
+  </form>
+  </div>
+
+
+<div id='update_event'>
+  <form action='/login' method='post'>
+    <div class='form_tag'>Update an event</div>
+    <label>First name</label><input type="text" name='firstname'>
+    <label>Last name</label><input type="text" name='lastname'>
+    <label>Email</label><input type="text" name='email'>
+    <label>Birthdate</label><input type="text" name='birthdate'>
+    <input type='submit'/>
   </form>
   </div>
 

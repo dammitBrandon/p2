@@ -1,0 +1,14 @@
+<div id='container'>
+
+<h1>Events Page</h1>
+
+<div class='events'>
+  <%erb Event.all do |event| %>
+    <%erb= event.name %>
+    <%erb= event.location %>
+    <%erb= event.start_time %>
+    <%erb= event.end_time %>
+  <%erb end %>
+<div>
+
+</div>

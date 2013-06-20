@@ -9,3 +9,19 @@ post '/create_event' do
 
   erb :index
 end
+
+post 'delete_event' do
+  user = find_user_by_email(params[:email])
+  event = find_event_by_user_id(user.id)
+  event.destroy
+
+  erb :index
+end
+
+post 'update_event' do
+  user = find_user_by_email(params[:email])
+  event = find_event_by_user_id(user.id)
+  event.destroy
+
+  erb :index
+end
