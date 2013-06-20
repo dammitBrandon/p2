@@ -1,8 +1,50 @@
 <div class="container">
-  <h1>Welcome to Sinatra!</h1>
-  <p>Hello, world!</p>
+  <h1>Welcome to the User and Event Manager!</h1>
+  <h2>Hello, Users and Event Managers!</h2>
 
-  <table>
+
+  <div id='login'>
+  <form action='/login' method='post'>
+    <label>Email</label><input="text" name='email'>
+    <label>Password<label><input="text" name='password'>
+  </form>
+  </div>
+  
+  <div id='sign_up'>
+  <form action='/login' method='post'>
+    <label>First name</label><input type="text" name='firstname'>
+    <label>Last name</label><input type="text" name='lastname'>
+    <label>Email</label><input type="text" name='email'>
+    <label>Birthdate</label><input type="text" name='birthdate'> 
+  </form>
+  </div>
+  
+
+  <div id='logout'>
+  <form action='/logout' method='post'
+    <a href='#'>Logout</a>
+  </form>
+  </div>
+
+<div id='create_event'>
+  <form action='/create_event' method='post'>
+    <label>Event name</label><input type="text" name='name'>
+    <label>Email</label><input type="text" name='email'>
+    <label>Location</label><input type="text" name='location'>
+    <label>Start time</label><input type="text" name='start_time'> 
+    <label>End time</label><input type="text" name='end_time'> 
+  </form>
+  </div>
+
+
+</div>
+
+
+
+
+
+
+<!-- <table>
     <tr>
       <th>File Description</th>
       <th>File Location</th>
@@ -19,5 +61,4 @@
       <td>The current controller</td>
       <td><code><%= File.expand_path('../../controllers/index.rb', __FILE__).gsub(Sinatra::Application.root, '') %></code></td>
     </tr>
-  </table>
-</div>
+  </table> -->
